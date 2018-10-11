@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imu.work001">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".XSIntent"/>
+        <activity android:name=".YSIntent">
+            <intent-filter>
+                <action android:name="com.imu.work001.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Transport"/>
+        <activity android:name=".TransNext"/>
+        <activity android:name=".ReturnData"/>
+        <activity android:name=".Rdata"/>
+        <activity android:name=".LifeCycle"/>
+        <activity android:name=".NormalActivity"/>
+        <activity android:name=".DialogActicity"  android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Standard"/>
+        <activity android:name=".SingleTop"/>
+        <activity android:name=".Patten"/>
+        <activity android:name=".Talk"/>
+    </application>
+
+</manifest>
